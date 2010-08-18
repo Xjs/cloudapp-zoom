@@ -1,0 +1,17 @@
+{
+    "name": "Cloud.app Image Zoom",
+    "version": "0.1",
+    "description": "Add zoom for large images hosted on cl.ly",
+    "content_scripts": [
+        {
+            "matches": ["http://cl.ly/*"],
+            "css": ["zoom.css"],
+            "js": ["jquery.js", "zoom.js"]
+        }
+    ],
+    "icons": {
+        "16": "icon_16.png",
+        "48": "icon_48.png",
+        "128": "icon_128.png"
+    }
+}

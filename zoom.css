@@ -1,0 +1,5 @@
+#container > *:first-of-type
+{
+    max-width: 100%;
+    height: auto;
+}
