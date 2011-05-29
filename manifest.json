@@ -1,6 +1,6 @@
 {
     "name": "Cloud.app Image Zoom",
-    "version": "0.3",
+    "version": "0.3.1",
     "description": "Add zoom for large images hosted on cl.ly",
     "content_scripts": [
         {
