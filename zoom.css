@@ -1,4 +1,4 @@
-#container > *:first-of-type
+#container > img:first-of-type
 {
     max-width: 100%;
     height: auto;

@@ -1,12 +1,24 @@
-var the_image = $('#container > *:first-of-type')
-var small_width = the_image.width();
-var new_image = new Image();
-new_image.src = the_image.attr("src");
-var large_width = new_image.width;
-the_image.css("width", small_width);
-the_image.css("max-width", "none");
+var the_image, new_image, small_width, large_width, large;
 
-var large = false;
+
+function init() {
+    the_image = $('#container > img:first-of-type')
+    small_width = the_image.width();
+    if (small_width == 0) {
+        setTimeout("init()", 200);
+    }
+    else {
+        new_image = new Image();
+        new_image.src = the_image.attr("src");
+        large_width = new_image.width;
+        the_image.css("width", small_width);
+        the_image.css("max-width", "none");
+        
+        large = false;
+    }
+}
+
+init();
 
 the_image.click(
     function () {
